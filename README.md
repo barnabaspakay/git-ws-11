@@ -1,14 +1,17 @@
 # git-ws-11
 
-repository: tároló/mappa
+repository: directory where git stores all the files and history of the project
 
-git status - repository aktuális állapota 
+working directory: directory where we are working on the project, where git is watching for changes
+git status - get the actual state of the working directory 
 
-commit: egy adott állapotot mentünk el. Checkpoint.
+commit: save the actual state of the working directory. Checkpoint.
 
 4 ütemű git fekvőtámasz:  
-git clone - egy távoli repositoryt (github) leklónozunk(lemásoljuk) a saját gépünkre.  
-git add <filename> - file-t hozzáadjuk a staging area-hoz.  
-git commit -m "commit message" - A staging area-ban elvő változtatásokat, commit-oljuk/elmentjük.  
-git push - a lokális repository-ból a távoli repository-ba feltöltjük a commit-olt változtatásokat.  
-git pull - a távoli repository-ból a lokális repository-ba letöltjük a változtatásokat.  
+git clone - clone a remote repostiory to local machine     
+git add <filename> - add a file to the staging area  
+git commit -m "commit message" - Commit files from staging area to local repository
+git push - push files and commits from local repository to remote repository
+git pull - pull files and commits from remote repository to local repository  
+
+.gitignore file: file where we can specify which files should be ignored by git
